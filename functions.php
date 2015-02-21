@@ -25,10 +25,14 @@ $hybrid_base_dir = trailingslashit( get_template_directory() );
 
 /* Load the Hybrid Core framework and theme files. */
 require_once( $hybrid_base_dir . 'library/hybrid.php'        );
-require_once( $hybrid_base_dir . 'inc/custom-background.php' );
-require_once( $hybrid_base_dir . 'inc/custom-header.php'     );
+//require_once( $hybrid_base_dir . 'inc/custom-background.php' );
+//require_once( $hybrid_base_dir . 'inc/custom-header.php'     );
 require_once( $hybrid_base_dir . 'inc/theme.php'             );
-require_once( $hybrid_base_dir . 'inc/walker.php'             );
+require_once( $hybrid_base_dir . 'inc/kirki.php'             );
+require_once( $hybrid_base_dir . 'inc/walker.php'            );
+
+/* Include Kirki */
+include_once( $hybrid_base_dir . 'kirki/kirki.php' );
 
 /* Launch the Hybrid Core framework. */
 new Hybrid();

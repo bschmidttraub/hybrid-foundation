@@ -169,3 +169,5 @@ function hybrid_base_get_editor_styles() {
 	/* Return the styles. */
 	return $editor_styles;
 }
+
+?>
